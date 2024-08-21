@@ -1,0 +1,564 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/**!---------RESET-------------**/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/**--------------HEADER---------------------**/
+header{
+    height: 120px;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 50px;
+    color: white; 
+}
+
+/**!-----QUITA PUNTOS DE LA LISTA---------**/
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    margin: 20px 20px 0px 0px;
+}
+
+/**!------QUITA SUBRAYADO-----**/
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/**?--------------PAGE INDEX---------------**/
+/**------------------MAIN------------------**/
+/**------------SECTION HERO---------------**/
+.hero{
+    width: 100%;
+    height:300px;
+    background-image: url(../img/herofondoarmadopc.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero p{
+    width: 50%;
+}
+
+.hero h2{
+    color: white;
+}
+
+.hero a{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+.boton{
+    color: white;
+}
+
+
+/**-----------------SECTION ARMADO--------------**/
+.armado h2{
+    color: black;
+    margin: 30px 0px 10px 10px;
+    font-size: 30px;
+}
+
+.armado p{
+    color: black;
+    margin: 5px 0px 0px 10px;
+    text-align: center;
+}
+
+.armado div{
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+/**-------------SECTION DESTACADOS-----------------**/
+.destacados h2{
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 30px;
+}
+
+.destacados-divcontenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.destacados-divcontenedor div{
+    width: 350px;
+    height: 350px;
+    border: 2px solid grey;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.destacados div img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.destacados div h3{
+    margin: 30px;
+    
+}
+
+.destacados div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/**?-------ESTILOS PARA LAS PAGINAS.HTML----------**/
+
+/**?-------------PAGE MONITORES-------------------**/
+/**----------SECTION MARCASYMODELOS------------------**/
+/*--.marcasymodelos {
+    color: black;
+    margin: 5px 0px 0px 10px;
+}--*/
+
+.marcasymodelos img{
+    width: 100%;
+}
+
+.marcasymodelos h2{
+    color: black;
+    font-size: 30px;
+    margin: 30px 0px 0px 10px;
+    text-align: center;
+}
+
+.marcasymodelos p{
+    color: black;
+    margin: 5px 0px 0px 10px;
+    text-align: start;
+}
+
+.marcasymodelos-divcards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.marcasymodelos-divcards div{
+    width: 350px;
+    height: 350px;
+    border: 2px solid grey;
+    margin: 40px;
+    text-align: center;
+}
+
+
+.marcasymodelos div img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.marcasymodelos div h3{
+    margin: 30px;
+}
+
+
+.marcasymodelos div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/**-------------SECTION ACCESORIOS----------------**/
+
+.accesorios img{
+    width: 100%;
+}
+
+.accesorios h2{
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.accesorios-divcards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    /*background-color: cadetblue;*/
+    /*width: 100%;*/
+}
+
+
+.caja1{
+    grid-row: span 2;
+}
+
+.caja1 img{
+    width: 350px;
+    height: 550px;
+}
+
+.caja2{
+    grid-column: span 2;
+}
+
+.caja2 img{
+    width: 750px;
+    height: 400px;
+}
+
+.caja4{
+    grid-row: span 2;
+}
+
+.caja4 img{
+    width: 350px;
+    height: 650px;
+}
+
+
+.caja3 img{
+    width: 350px;
+    height: 300px;
+}
+
+.caja5 img{
+    width: 350px;
+    height: 300px;
+}
+
+.caja6 img{
+    width: 350px;
+    height: 300px;
+}
+
+.accesorios-divcards div{
+    width: auto;
+    height: auto;
+    border: 2px solid grey;
+    margin: 40px;
+    /*text-align: center;*/
+    
+}
+
+/*.accesorios-divcards div img{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    object-fit: cover;
+}*/
+
+.accesorios-divcards h3{
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+.accesorios-divcards div a{
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+/**?-------------PAGE PC AMRAMDAS-------------------**/
+/**--------------SECTION ARMATUPA---------------**/
+/*.armatupc{
+    color: black;
+    margin: 5px 0px 0px 10px;
+}*/
+
+.armatupc img{
+    width: 100%;
+}
+
+.armatupc h2{
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.armatupc p{
+    color: black;
+    margin: 5px 0px 0px 10px;
+    text-align: start;
+}
+
+.armatupc-divcards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.armatupc-divcards div{
+    width: 350px;
+    height: 350px;
+    border: 2px solid grey;
+    margin: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.armatupc div img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.armatupc div h3{
+    margin: 30px;
+}
+
+.armatupc div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/**-------SECTION TODOLOQUENECESITAS-----------**/
+.todoloquenecesitas{
+    color: black;
+    margin: 5px 0px 0px 10px;
+}
+
+
+.todoloquenecesitas h2{
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.todoloquenecesitas p{
+    color: black;
+    margin: 5px 0px 0px 10px;
+    text-align: start;
+}
+
+.todoloquenecesitas-divcards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.todoloquenecesitas-divcards div{
+    width: 350px;
+    height: 350px;
+    border: 2px solid grey;
+    margin: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.todoloquenecesitas div img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.todoloquenecesitas div h3{
+    margin: 30px;
+}
+
+.todoloquenecesitas div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+
+/**?-------------PAGE PLACAS DE VIDEO---------------**/
+/**--------SECTION MEJORA--------**/
+/*.mejora{
+    color: black;
+    margin: 5px 0px 0px 10px;
+}*/
+
+.mejora h2{
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.mejora p{
+    color: black;
+    margin: 5px 0px 0px 10px;
+    text-align: start;
+}
+
+.mejora-divcards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.mejora-divcards div{
+    width: 350px;
+    height: 350px;
+    border: 2px solid grey;
+    margin: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.mejora div img{
+    width: 100%;
+    height: 200px;
+}
+
+
+.mejora div h3{
+    margin: 30px;
+}
+
+
+.mejora div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/**--------SECTION EXTRAEELMAX--------**/
+/*.extraelmax{
+    color: black;
+    margin: 5px 0px 0px 10px;
+}*/
+
+.extraelmax h2{
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.extraelmax p{
+    color: black;
+    margin: 5px 0px 0px 10px;
+    text-align: start;
+}
+
+.extraelmax-divcards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.extraelmax-divcards div{
+    width: 350px;
+    height: 350px;
+    border: 2px solid grey;
+    margin: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.extraelmax div img{
+    width: 100%;
+    height: 200px;
+}
+
+
+.extraelmax div h3{
+    margin: 30px;
+}
+
+
+.extraelmax div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+
+
+/**?-------------PAGE CONTACTENOS----------**/
+/**------SECTION FORMULARIO--------**/
+.formulario h2{
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 30px;
+    text-align: start;
+}
+
+.formulario div{
+    margin: 10px 10px 5px 10px;
+}
+
+
+/**-------------FOOTER-----------------------**/
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 35px;
+    margin: 0px 0px 0px 10px;
+}
+
+footer div a img{
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px 0px 0px;
+}
+

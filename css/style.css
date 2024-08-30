@@ -1,59 +1,55 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /**!---------RESET-------------**/
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
 }
 
 
-
-/**--------------HEADER---------------------**/
-header{
-    height: 120px;
-    background-color: black;
-    padding: 10px;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/**--------------------HEADER--------------------------**/
+/**!---ESTILOS BARRA NAV BOOTSTRAP----**/
+.colornavbar{
+background-color: gray;
 }
 
-header h1{
-    font-size: 50px;
-    color: white; 
+.navbar-brand{
+    font-size: 35px !important;
 }
 
-/**!-----QUITA PUNTOS DE LA LISTA---------**/
-header nav ul{
-    display: flex;
-    list-style: none;
+.navbar-brand{
+    color: white !important;
 }
 
-header nav ul li{
-    margin: 20px 20px 0px 0px;
+.btn-outline-dark{
+    background-color: rgb(255, 255, 255) !important;
 }
 
-/**!------QUITA SUBRAYADO-----**/
-header nav ul li a{
-    text-decoration: none;
-    color: white;
+.btn-outline-dark:hover{
+    background-color: rgb(0, 0, 0) !important;
 }
 
-/**?--------------PAGE INDEX---------------**/
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+    
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+
+/**?-----------------------PAGE INDEX------------------------**/
 /**------------------MAIN------------------**/
 /**------------SECTION HERO---------------**/
-.hero{
+.hero {
     width: 100%;
-    height:300px;
+    height: 300px;
     background-image: url(../img/herofondoarmadopc.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,62 +61,91 @@ header nav ul li a{
     align-items: center;
 }
 
-.hero p{
-    width: 50%;
-}
 
-.hero h2{
+.hero h2 {
     color: white;
-}
-
-.hero a{
-    color: white;
-    font-size: 20px;
-    padding: 5px;
-    
-}
-
-.boton{
-    color: white;
-}
-
-
-/**-----------------SECTION ARMADO--------------**/
-.armado h2{
-    color: black;
-    margin: 30px 0px 10px 10px;
     font-size: 30px;
-}
-
-.armado p{
-    color: black;
-    margin: 5px 0px 0px 10px;
     text-align: center;
 }
 
-.armado div{
+.hero p {
+    color: white;
+    text-align: center;
+    margin: 0px 5px 0px 5px;
+    font-size: 16px;
+}
+
+.hero a {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/**!-------MEDIAQUERIES HERO---------*/
+@media screen and (max-width:490px){
+    .hero h2{
+        text-align: center;
+    }
+        
+}
+
+@media screen and (max-width:870px){
+    .hero {
+        width: 100%;
+        height: auto;
+    }
+        
+}
+
+
+/**-----------------------SECTION ARMADO----------------**/
+.armado h2 {
+    color: black;
+    margin: 20px 5px 20px 5px;
+    font-size: 25px;
+}
+
+.armado p {
+    color: black;
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.armado div {
     display: flex;
     text-align: center;
     flex-direction: row-reverse;
     align-items: center;
 }
 
+/**!--------MEDIAQUERIES ARMADO--------------*/
+@media screen and (max-width:1000px){
+    .armado img{
+        display: none;
+    }
 
-/**-------------SECTION DESTACADOS-----------------**/
-.destacados h2{
-    color: black;
-    margin: 30px 0px 0px 10px;
-    font-size: 30px;
+    .armado h2 {
+        text-align: center;
+    }
 }
 
-.destacados-divcontenedor{
+
+/**-------------SECTION DESTACADOS-----------------**/
+.destacados h2 {
+    color: black;
+    margin: 30px 0px 0px 10px;
+    font-size: 25px;
+}
+
+.destacados-divcontenedor {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.destacados-divcontenedor div{
+.destacados-divcontenedor div {
     width: 350px;
     height: 350px;
     border: 2px solid grey;
@@ -129,78 +154,88 @@ header nav ul li a{
 }
 
 
-.destacados div img{
+.destacados div img {
     width: 300px;
     height: 200px;
-    margin: 10px;
+    margin: 0px;
 }
 
-.destacados div h3{
-    margin: 30px;
-    
+.destacados div h3 {
+    margin: 25px;
 }
 
-.destacados div a{
+
+.destacados div a {
     background-color: black;
     text-decoration: none;
     color: white;
     padding: 5px;
 }
 
-/**?-------ESTILOS PARA LAS PAGINAS.HTML----------**/
 
+.destacados div a:hover {
+    text-decoration: underline;
+}
+
+
+/**!----------MEDIAQUERIES ARMADO--------------*/
+@media screen and (max-width:490px){
+    .destacados h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+
+/**?--------------ESTILOS PARA LAS PAGINAS.HTML--------------**/
 /**?-------------PAGE MONITORES-------------------**/
-/**----------SECTION MARCASYMODELOS------------------**/
-/*--.marcasymodelos {
-    color: black;
-    margin: 5px 0px 0px 10px;
-}--*/
-
-.marcasymodelos img{
+/**--------SECTION MARCASYMODELOS---------------**/
+.marcasymodelos img {
     width: 100%;
 }
 
-.marcasymodelos h2{
+.marcasymodelos h2 {
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     margin: 30px 0px 0px 10px;
     text-align: center;
 }
 
-.marcasymodelos p{
+.marcasymodelos p {
     color: black;
-    margin: 5px 0px 0px 10px;
-    text-align: start;
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    font-size: 16px;
 }
 
-.marcasymodelos-divcards{
+.marcasymodelos-divcards {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.marcasymodelos-divcards div{
+.marcasymodelos-divcards div {
     width: 350px;
     height: 350px;
     border: 2px solid grey;
-    margin: 40px;
+    margin: 10px;
     text-align: center;
 }
 
 
-.marcasymodelos div img{
+.marcasymodelos div img {
     width: 300px;
     height: 200px;
     margin: 10px;
 }
 
-.marcasymodelos div h3{
+.marcasymodelos div h3 {
     margin: 30px;
 }
 
 
-.marcasymodelos div a{
+.marcasymodelos div a {
     background-color: black;
     text-decoration: none;
     color: white;
@@ -208,135 +243,122 @@ header nav ul li a{
 }
 
 /**-------------SECTION ACCESORIOS----------------**/
-
-.accesorios img{
+.accesorios img {
     width: 100%;
 }
 
-.accesorios h2{
+.accesorios h2 {
     color: black;
     margin: 30px 0px 0px 10px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 
-.accesorios-divcards{
+.accesorios-divcards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    justify-content: center;
-    justify-items: center;
     gap: 10px;
-    /*background-color: cadetblue;*/
-    /*width: 100%;*/
+}
+
+.accesorios-divcards div {
+    border: 2px solid grey;
+    margin: 20px 40px 20px 40px;
+}
+
+.cajas {
+    position: relative;
+}
+
+.accesorios-divcards div img {
+    width: 100%;
+    height: 90%;
+}
+
+.cajas h3 {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
 }
 
 
-.caja1{
+.caja1 {
     grid-row: span 2;
 }
 
-.caja1 img{
-    width: 350px;
-    height: 550px;
-}
-
-.caja2{
+.caja2 {
     grid-column: span 2;
 }
 
-.caja2 img{
-    width: 750px;
-    height: 400px;
-}
-
-.caja4{
+.caja4 {
     grid-row: span 2;
 }
 
-.caja4 img{
-    width: 350px;
-    height: 650px;
-}
-
-
-.caja3 img{
-    width: 350px;
-    height: 300px;
-}
-
-.caja5 img{
-    width: 350px;
-    height: 300px;
-}
-
-.caja6 img{
-    width: 350px;
-    height: 300px;
-}
-
-.accesorios-divcards div{
-    width: auto;
-    height: auto;
+.accesorios-divcards div {
     border: 2px solid grey;
-    margin: 40px;
-    /*text-align: center;*/
-    
+    margin: 20px 40px 20px 40px;
 }
 
-/*.accesorios-divcards div img{
-    width: 300px;
-    height: auto;
-    margin: 10px;
-    object-fit: cover;
-}*/
 
-.accesorios-divcards h3{
-    text-align: center;
-    margin: 0px 0px 5px 0px;
+/**!----------MEDIAQUERIES ACCESORIO--------------**/
+@media screen and (max-width:1110px){
+    .accesorios-divcards {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        gap: 5px;
+    }
+
+    .accesorios-divcards div {
+        width: 350px;
+        height: 350px;
+        border: 2px solid grey;
+        margin: 20px 40px 20px 40px;
+    }
 }
 
-.accesorios-divcards div a{
-    background-color: rgb(0, 0, 0);
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    text-align: center;
+@media screen and (max-width:1087px){
+    .cajas h3 {
+        width: 100%;
+    }
 }
+
 
 /**?-------------PAGE PC AMRAMDAS-------------------**/
 /**--------------SECTION ARMATUPA---------------**/
-/*.armatupc{
-    color: black;
-    margin: 5px 0px 0px 10px;
-}*/
-
-.armatupc img{
+.armatupc img {
     width: 100%;
 }
 
-.armatupc h2{
+.armatupc h2 {
     color: black;
     margin: 30px 0px 0px 10px;
     font-size: 30px;
     text-align: center;
 }
 
-.armatupc p{
+.armatupc p {
     color: black;
     margin: 5px 0px 0px 10px;
-    text-align: start;
+    text-align: center;
 }
 
-.armatupc-divcards{
+.armatupc-divcards {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.armatupc-divcards div{
+.armatupc-divcards div {
     width: 350px;
     height: 350px;
     border: 2px solid grey;
@@ -345,51 +367,50 @@ header nav ul li a{
     display: inline-block;
 }
 
-.armatupc div img{
+.armatupc div img {
     width: 300px;
     height: 200px;
     margin: 10px;
 }
 
-.armatupc div h3{
+.armatupc div h3 {
     margin: 30px;
 }
 
-.armatupc div a{
+.armatupc div a {
     background-color: black;
     text-decoration: none;
     color: white;
     padding: 5px;
 }
 
-/**-------SECTION TODOLOQUENECESITAS-----------**/
-.todoloquenecesitas{
+/**-------------SECTION TODOLOQUENECESITAS-----------------**/
+.todoloquenecesitas {
     color: black;
     margin: 5px 0px 0px 10px;
 }
 
-
-.todoloquenecesitas h2{
+.todoloquenecesitas h2 {
     color: black;
     margin: 30px 0px 0px 10px;
     font-size: 30px;
     text-align: center;
 }
 
-.todoloquenecesitas p{
+.todoloquenecesitas p {
     color: black;
     margin: 5px 0px 0px 10px;
-    text-align: start;
+    text-align: center;
 }
 
-.todoloquenecesitas-divcards{
+.todoloquenecesitas-divcards {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.todoloquenecesitas-divcards div{
+.todoloquenecesitas-divcards div {
     width: 350px;
     height: 350px;
     border: 2px solid grey;
@@ -398,17 +419,17 @@ header nav ul li a{
     display: inline-block;
 }
 
-.todoloquenecesitas div img{
+.todoloquenecesitas div img {
     width: 300px;
     height: 200px;
     margin: 10px;
 }
 
-.todoloquenecesitas div h3{
+.todoloquenecesitas div h3 {
     margin: 30px;
 }
 
-.todoloquenecesitas div a{
+.todoloquenecesitas div a {
     background-color: black;
     text-decoration: none;
     color: white;
@@ -418,25 +439,20 @@ header nav ul li a{
 
 /**?-------------PAGE PLACAS DE VIDEO---------------**/
 /**--------SECTION MEJORA--------**/
-/*.mejora{
-    color: black;
-    margin: 5px 0px 0px 10px;
-}*/
-
-.mejora h2{
+.mejora h2 {
     color: black;
     margin: 30px 0px 0px 10px;
     font-size: 30px;
     text-align: center;
 }
 
-.mejora p{
+.mejora p {
     color: black;
     margin: 5px 0px 0px 10px;
-    text-align: start;
+    text-align: center;
 }
 
-.mejora-divcards{
+.mejora-divcards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -444,7 +460,7 @@ header nav ul li a{
 }
 
 
-.mejora-divcards div{
+.mejora-divcards div {
     width: 350px;
     height: 350px;
     border: 2px solid grey;
@@ -453,44 +469,40 @@ header nav ul li a{
     display: inline-block;
 }
 
-.mejora div img{
+.mejora div img {
     width: 100%;
     height: 200px;
 }
 
 
-.mejora div h3{
+.mejora div h3 {
     margin: 30px;
 }
 
 
-.mejora div a{
+.mejora div a {
     background-color: black;
     text-decoration: none;
     color: white;
     padding: 5px;
 }
 
-/**--------SECTION EXTRAEELMAX--------**/
-/*.extraelmax{
-    color: black;
-    margin: 5px 0px 0px 10px;
-}*/
 
-.extraelmax h2{
+/**--------SECTION EXTRAEELMAX--------**/
+.extraelmax h2 {
     color: black;
     margin: 30px 0px 0px 10px;
     font-size: 30px;
     text-align: center;
 }
 
-.extraelmax p{
+.extraelmax p {
     color: black;
     margin: 5px 0px 0px 10px;
-    text-align: start;
+    text-align: center;
 }
 
-.extraelmax-divcards{
+.extraelmax-divcards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -498,7 +510,7 @@ header nav ul li a{
 }
 
 
-.extraelmax-divcards div{
+.extraelmax-divcards div {
     width: 350px;
     height: 350px;
     border: 2px solid grey;
@@ -507,18 +519,18 @@ header nav ul li a{
     display: inline-block;
 }
 
-.extraelmax div img{
+.extraelmax div img {
     width: 100%;
     height: 200px;
 }
 
 
-.extraelmax div h3{
+.extraelmax div h3 {
     margin: 30px;
 }
 
 
-.extraelmax div a{
+.extraelmax div a {
     background-color: black;
     text-decoration: none;
     color: white;
@@ -529,36 +541,59 @@ header nav ul li a{
 
 /**?-------------PAGE CONTACTENOS----------**/
 /**------SECTION FORMULARIO--------**/
-.formulario h2{
+.formulario h2 {
     color: black;
     margin: 30px 0px 0px 10px;
     font-size: 30px;
     text-align: start;
 }
 
-.formulario div{
+.formulario div {
     margin: 10px 10px 5px 10px;
 }
 
 
 /**-------------FOOTER-----------------------**/
-footer{
-    background-color: black;
+footer {
+    background-color: gray;
     color: white;
     display: flex;
     text-align: center;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-footer h2{
-    font-size: 35px;
-    margin: 0px 0px 0px 10px;
+footer h2 {
+    font-size: 30px;
+    margin: 5px;
 }
 
-footer div a img{
+footer div p {
+    margin: 5px;
+}
+
+footer div a img {
     width: 50px;
     height: 50px;
-    margin: 0px 10px 0px 0px;
+    margin: 5px;
 }
 
+footer div img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+
+
+/**!-------------PAGE CONTACTENOS-------------**/
+@media screen and (max-width:750px){
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

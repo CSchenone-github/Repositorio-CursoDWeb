@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Proyecto-DesarrolloWeb</title>
+    <title>PC Center Lanus | Home</title>
+    <!----------BOOTSTRAPS LINK ESTILOS .CSS------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
+    <!----------BOOTSTRAPS LINK JAVASCRIPT.JS------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <!--CABEZA -->
     <header>
-        <h1>PC Center Lanus</h1>
-        <!-- BARRA DE NAVEGACION -->
-        <nav>
-            <!-- LISTA DESORDENADA -->
-
-            <ul>
-                <!-- ENLACES RELATIVOS -->
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/monitores.html">Monitores</a></li>
-                <li><a href="./pages/pcarmadas.html">PC Armadas</a></li>
-                <li><a href="./pages/placasdevideo.html">Placas de Video</a></li>
-                <li><a href="./pages/contactenos.html">Contactenos</a></li>
-            </ul>
-
+        <!--BERRA NAVEGACION BOOSTSTRAP-->
+        <nav class="navbar navbar-expand-lg colornavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">PC Center Lanus</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/monitores.html">Monitores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/placasdevideo.html">Placas de Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/pcarmadas.html">PC Armadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactenos.html">Contactenos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-        </header>
+    </header>
     <!--CONTIENE TODO EL CONTENIDO PPAL DE LA PAGINA -->
     <main>
         <!--AGRUPA/DIVIDE CONTENIDOS CON MISMA TEMATICA DENTRO DEL CONTENIDO PPAL -->
         <section class="hero">
             <h2>Quienes somos? y que hacemos?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, architecto labore quas voluptatem temporibus hic, nemo maiores consequatur quos neque assumenda illum. Temporibus sunt necessitatibus est quibusdam saepe veritatis distinctio.</p>
-            <a href="./pages/contactenos.html" >Mas Informacion</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, architecto labore quas voluptatem
+                temporibus hic, nemo maiores consequatur quos neque assumenda illum. Temporibus sunt necessitatibus est
+                quibusdam saepe veritatis distinctio.</p>
+            <a href="./pages/contactenos.html">Mas Informacion</a>
         </section>
         <section class="armado">
             <h2>Armado y Venta de PCs</h2>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi quo non, hic explicabo excepturi at. Id amet tempora suscipit exercitationem, in voluptatum dolor animi quos. Blanditiis neque et nesciunt, facere non facilis officiis fuga incidunt exercitationem debitis enim repellendus autem in mollitia nulla maxime cum sit soluta voluptates molestiae.</p>
-            <img src="./img/armado-fondo-800x300.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi quo non, hic explicabo
+                    excepturi at. Id amet tempora suscipit exercitationem, in voluptatum dolor animi quos. Blanditiis
+                    neque et nesciunt, facere non facilis officiis fuga incidunt exercitationem debitis enim repellendus
+                    autem in mollitia nulla maxime cum sit soluta voluptates molestiae.</p>
+                <img src="./img/armado-fondo-800x300.png" alt="">
             </div>
         </section>
         <section class="destacados">
@@ -46,7 +79,7 @@
             <div class="destacados-divcontenedor">
                 <div>
                     <img src="./img/teclado1.jpg" alt="">
-                    <h3>Teclado ProGamer</h3>   
+                    <h3>Teclado ProGamer</h3>
                     <a href="">Comprar</a>
                 </div>
                 <div>
@@ -55,7 +88,7 @@
                     <a href="">Comprar</a>
                 </div>
                 <div>
-                    <img src="./img/placavideo-2.jpg"  alt="" >
+                    <img src="./img/placavideo-2.jpg" alt="">
                     <h3>Placa Video</h3>
                     <a href="">Comprar</a>
                 </div>
@@ -71,13 +104,12 @@
                 <p>Tel: +54 9 11 1234-5678</p>
             </div>
         </div>
-        </div>
-            <img src="./img/DATAWEB.jpg" alt="" width="50" height="50"></a>
-        </div>
         <div>
+            <img src="./img/DATAWEB.jpg" alt="" ></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt=""></a>
             <a href="https://web.whatsapp.com" target="_blank"><img src="./img/whatsapp.png" alt=""></a>
         </div>
     </footer>
 </body>
+
 </html>
